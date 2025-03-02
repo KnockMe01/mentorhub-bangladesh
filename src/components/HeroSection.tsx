@@ -47,8 +47,8 @@ const HeroSection = () => {
                   <div className="absolute top-4 left-4 right-4 bottom-4 bg-gradient-to-br from-mentor-100 to-mentor-50 rounded-2xl animate-float"></div>
                   <div className="absolute inset-0 glass-card overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
-                      alt="Mentorship Session" 
+                      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+                      alt="Casual Mentorship" 
                       className="w-full h-full object-cover"
                       loading="lazy"
                     />
