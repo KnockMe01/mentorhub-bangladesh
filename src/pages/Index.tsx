@@ -8,7 +8,6 @@ import MentorsSection from '@/components/MentorsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
-
 import { GraduationCap } from 'lucide-react';
 
 const Index = () => {
@@ -27,9 +26,12 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     // Initial check
     handleScroll();
-
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Add console logs to debug
+  console.log("Rendering Index page");
 
   return (
     <div className="overflow-hidden">

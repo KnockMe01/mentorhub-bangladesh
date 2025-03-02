@@ -19,6 +19,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Debug log to check if the navbar is rendering
+  console.log("Rendering Navbar, isScrolled:", isScrolled);
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
