@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <GraduationCap className="h-6 w-6 text-mentor-600" />
-              <span className="font-display text-lg font-bold">MentorHub BD</span>
+              <span className="font-display text-lg font-bold">KnockMe</span>
             </div>
             <p className="text-muted-foreground mb-6">
               Connecting ambitious professionals with industry-leading mentors across Bangladesh.
@@ -106,7 +106,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-center text-muted-foreground text-sm">
-            © {currentYear} MentorHub Bangladesh. All rights reserved.
+            © {currentYear} KnockMe. All rights reserved.
           </p>
         </div>
       </div>
