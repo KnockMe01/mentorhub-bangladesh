@@ -1,6 +1,5 @@
-
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, GraduationCap } from 'lucide-react';
 
 const HeroSection = () => {
   return (
