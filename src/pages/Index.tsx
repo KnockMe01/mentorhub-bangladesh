@@ -2,10 +2,13 @@
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
-import StatsSection from '@/components/StatsSection';
+import ProblemSolutionSection from '@/components/ProblemSolutionSection';
+import HowItWorksSection from '@/components/HowItWorksSection';
+import BenefitsSection from '@/components/BenefitsSection';
 import MentorsSection from '@/components/MentorsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import PricingSection from '@/components/PricingSection';
+import FaqSection from '@/components/FaqSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 import { GraduationCap } from 'lucide-react';
@@ -40,17 +43,20 @@ const Index = () => {
            style={{ animation: 'fadeOut 0.7s ease-in-out forwards 0.5s' }}>
         <div className="flex flex-col items-center">
           <GraduationCap className="h-16 w-16 text-mentor-600 animate-pulse" />
-          <h1 className="mt-4 text-2xl font-bold">MentorHub BD</h1>
+          <h1 className="mt-4 text-2xl font-bold">KnockMe</h1>
         </div>
       </div>
       
       <main className="min-h-screen">
         <Navbar />
         <HeroSection />
-        <StatsSection />
-        <ServicesSection />
+        <ProblemSolutionSection />
+        <HowItWorksSection />
+        <BenefitsSection />
         <MentorsSection />
         <TestimonialsSection />
+        <PricingSection />
+        <FaqSection />
         <CtaSection />
         <Footer />
       </main>

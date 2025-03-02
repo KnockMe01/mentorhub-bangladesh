@@ -5,23 +5,23 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const testimonials = [
   {
-    content: "The mentorship I received completely transformed my career path. My mentor provided invaluable guidance that helped me land my dream job at a top tech company.",
+    content: "KnockMe transformed my job search. My mentor's feedback on my CV and interview techniques helped me secure a position at a top tech company within just 2 months.",
     author: "Raisa Islam",
-    role: "Software Engineer",
+    role: "Software Engineer at Pathao",
     image: "/placeholder.svg",
     initials: "RI"
   },
   {
-    content: "The CV review service was exceptional. My mentor pointed out critical improvements that I would have never thought of. I started getting interview calls within a week after the changes!",
+    content: "As someone looking to switch from banking to tech product management, my mentor gave me invaluable guidance on transferring my skills and highlighting my strengths. I wouldn't have made the transition without this mentorship.",
     author: "Mohammed Hasan",
-    role: "Marketing Associate",
+    role: "Product Manager at ShopUp",
     image: "/placeholder.svg",
     initials: "MH"
   },
   {
-    content: "As a recent graduate, I was unsure about my career direction. My mentor helped me identify my strengths and navigate the job market with confidence.",
+    content: "Being based in Rajshahi, I never thought I'd have access to mentors from global companies. KnockMe broke those geographical barriers and connected me with amazing mentors who helped me land a remote data science role.",
     author: "Anika Rahman",
-    role: "Data Analyst",
+    role: "Data Analyst at Bkash",
     image: "/placeholder.svg",
     initials: "AR"
   },
@@ -30,7 +30,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  const handleDotClick = (index: number) => {
+  const handleDotClick = (index) => {
     setCurrentIndex(index);
   };
   
@@ -45,10 +45,10 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="py-20 md:py-32 bg-gradient-to-b from-white to-mentor-50/50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-on-scroll">
           <h2 className="section-title">Success Stories</h2>
           <p className="section-subtitle">
-            Hear from mentees who have transformed their careers through our platform
+            Real outcomes from professionals who found the right mentorship
           </p>
         </div>
         

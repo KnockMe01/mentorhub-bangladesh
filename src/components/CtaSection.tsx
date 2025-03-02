@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Users } from 'lucide-react';
 
 const CtaSection = () => {
   return (
@@ -13,15 +13,16 @@ const CtaSection = () => {
       </div>
       
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-4xl mx-auto text-center text-white">
+        <div className="max-w-4xl mx-auto text-center text-white animate-on-scroll">
+          <Users className="h-16 w-16 mx-auto mb-8 text-white/80" />
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            Ready to accelerate your career growth?
+            Ready to transform your career?
           </h2>
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Join our community of ambitious professionals and dedicated mentors to unlock your full potential.
+            Join thousands of Bangladeshi professionals who have accelerated their careers through personalized mentorship.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button size="lg" className="bg-white text-mentor-700 hover:bg-white/90 border-2 border-transparent">
               Find Your Mentor
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -30,6 +31,10 @@ const CtaSection = () => {
               Become a Mentor
             </Button>
           </div>
+          
+          <p className="mt-8 text-sm text-white/60">
+            No credit card required to start your free mentorship session
+          </p>
         </div>
       </div>
     </section>
