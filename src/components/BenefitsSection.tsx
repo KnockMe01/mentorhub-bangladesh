@@ -42,7 +42,7 @@ const BenefitsSection = () => {
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="section-title">Who Can Benefit</h2>
           <p className="section-subtitle">
-            Tailored mentorship solutions for different career stages and goals
+            Personalized mentorship solutions for different career stages and goals
           </p>
         </div>
         
