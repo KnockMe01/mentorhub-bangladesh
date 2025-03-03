@@ -7,9 +7,9 @@ const CtaSection = () => {
     <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-mentor-600 opacity-95"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')] bg-cover bg-center opacity-10"></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-mentor-500 rounded-full translate-x-1/3 translate-y-1/3 opacity-30 blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-topmate-500 to-topmate-600"></div>
+        <div className="absolute right-0 bottom-0 w-1/3 h-full bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')] bg-cover opacity-10"></div>
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-topmate-400/20 blur-3xl"></div>
       </div>
       
       <div className="container mx-auto px-4 md:px-6">
@@ -18,16 +18,16 @@ const CtaSection = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
             Ready to transform your career?
           </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
             Join thousands of Bangladeshi professionals who have accelerated their careers through personalized mentorship.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-white text-mentor-700 hover:bg-white/90 border-2 border-transparent">
+            <Button size="lg" className="bg-white text-topmate-700 hover:bg-white/90 border-2 border-transparent rounded-full shadow-lg">
               Find Your Mentor
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 rounded-full">
               Become a Mentor
             </Button>
           </div>

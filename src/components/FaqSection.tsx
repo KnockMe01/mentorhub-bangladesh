@@ -38,17 +38,19 @@ const FaqSection = () => {
     <section id="faq" className="py-20 md:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="section-title">Frequently Asked Questions</h2>
-          <p className="section-subtitle">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Find answers to common questions about our mentorship platform
           </p>
         </div>
         
-        <Accordion type="single" collapsible className="animate-on-scroll">
+        <Accordion type="single" collapsible className="animate-on-scroll space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b border-border">
-              <AccordionTrigger className="text-lg font-medium py-4">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-4">
+            <AccordionItem key={index} value={`item-${index}`} className="border rounded-2xl overflow-hidden border-gray-200 px-1">
+              <AccordionTrigger className="text-lg font-medium py-5 px-4 hover:no-underline hover:text-topmate-600">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-5 px-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
@@ -57,7 +59,7 @@ const FaqSection = () => {
         
         <div className="mt-12 text-center animate-on-scroll">
           <p className="text-muted-foreground mb-4">Still have questions?</p>
-          <a href="#" className="text-mentor-600 font-medium hover:text-mentor-700 transition-colors">
+          <a href="#" className="text-topmate-600 font-medium hover:text-topmate-700 transition-colors">
             Contact our support team
           </a>
         </div>

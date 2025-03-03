@@ -50,23 +50,23 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="py-20 md:py-32 bg-gradient-to-b from-white to-mentor-50/30">
+    <section id="pricing" className="py-20 md:py-32 bg-gradient-to-b from-white to-topmate-50/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="section-title">Simple, Transparent Pricing</h2>
-          <p className="section-subtitle">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Invest in your career growth with affordable mentorship packages
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
-            <Card key={index} className={`animate-on-scroll ${
-              plan.popular ? 'border-mentor-500 shadow-lg relative' : 'border-transparent'
-            }`} style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card key={index} className={`animate-on-scroll border-0 rounded-3xl overflow-hidden ${
+              plan.popular ? 'shadow-xl relative' : 'shadow-sm hover:shadow-xl'
+            } transition-all duration-300`} style={{ animationDelay: `${index * 0.2}s` }}>
               {plan.popular && (
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <span className="bg-mentor-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+                  <span className="bg-topmate-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
                 </div>
               )}
               
@@ -83,7 +83,7 @@ const PricingSection = () => {
                 <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <Check className="text-mentor-600 mr-2 h-5 w-5 shrink-0 mt-0.5" />
+                      <Check className="text-topmate-600 mr-3 h-5 w-5 shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -91,7 +91,7 @@ const PricingSection = () => {
               </CardContent>
               
               <CardFooter>
-                <Button className={`w-full ${plan.popular ? 'bg-mentor-600 hover:bg-mentor-700' : ''}`}>
+                <Button className={`w-full rounded-full ${plan.popular ? 'bg-topmate-600 hover:bg-topmate-700' : ''}`}>
                   {plan.cta}
                 </Button>
               </CardFooter>
@@ -104,7 +104,7 @@ const PricingSection = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Share your expertise and earn by helping others grow. Mentors receive 70% of all session fees.
           </p>
-          <Button className="mt-6" variant="outline">Become a Mentor</Button>
+          <Button className="mt-6 rounded-full" variant="outline">Become a Mentor</Button>
         </div>
       </div>
     </section>
