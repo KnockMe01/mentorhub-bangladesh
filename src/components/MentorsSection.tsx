@@ -46,7 +46,7 @@ const mentors = [
 
 const MentorsSection = () => {
   return (
-    <section id="mentors" className="py-20 md:py-32 bg-gradient-to-b from-topmate-50/30 to-white">
+    <section id="mentors" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Featured Mentors</h2>
@@ -57,7 +57,7 @@ const MentorsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {mentors.map((mentor, index) => (
-            <Card key={index} className="border-0 rounded-3xl overflow-hidden group hover:-translate-y-2 transition-all duration-300 animate-on-scroll shadow-sm hover:shadow-xl" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="border-0 rounded-3xl overflow-hidden group card-hover transition-all duration-300 animate-on-scroll shadow-md hover:shadow-xl" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
                   <Avatar className="w-24 h-24 border-4 border-white shadow-lg mb-4">

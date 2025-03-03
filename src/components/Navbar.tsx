@@ -54,8 +54,8 @@ const Navbar = () => {
         </nav>
         
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="outline" className="hidden md:inline-flex">Sign In</Button>
-          <Button className="bg-topmate-600 hover:bg-topmate-700 text-white">Get Started</Button>
+          <Button variant="outline" className="hidden md:inline-flex rounded-full border-topmate-200">Sign In</Button>
+          <Button className="bg-topmate-600 hover:bg-topmate-700 text-white rounded-full">Get Started</Button>
         </div>
       </div>
       
@@ -68,8 +68,8 @@ const Navbar = () => {
           <a href="#pricing" className="block text-foreground/80 hover:text-topmate-600 transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Pricing</a>
           <a href="#faq" className="block text-foreground/80 hover:text-topmate-600 transition-colors py-2" onClick={() => setIsMenuOpen(false)}>FAQ</a>
           <div className="pt-4 flex flex-col space-y-3">
-            <Button variant="outline" className="w-full">Sign In</Button>
-            <Button className="bg-topmate-600 hover:bg-topmate-700 text-white w-full">Get Started</Button>
+            <Button variant="outline" className="w-full rounded-full">Sign In</Button>
+            <Button className="bg-topmate-600 hover:bg-topmate-700 text-white w-full rounded-full">Get Started</Button>
           </div>
         </div>
       </div>

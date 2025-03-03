@@ -50,7 +50,7 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="py-20 md:py-32 bg-gradient-to-b from-white to-topmate-50/30">
+    <section id="pricing" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h2>
@@ -62,7 +62,7 @@ const PricingSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <Card key={index} className={`animate-on-scroll border-0 rounded-3xl overflow-hidden ${
-              plan.popular ? 'shadow-xl relative' : 'shadow-sm hover:shadow-xl'
+              plan.popular ? 'shadow-xl relative' : 'shadow-md hover:shadow-xl card-hover'
             } transition-all duration-300`} style={{ animationDelay: `${index * 0.2}s` }}>
               {plan.popular && (
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -70,7 +70,7 @@ const PricingSection = () => {
                 </div>
               )}
               
-              <CardHeader>
+              <CardHeader className={plan.popular ? 'pt-8' : ''}>
                 <CardTitle className="text-2xl font-bold text-center">{plan.name}</CardTitle>
                 <div className="text-center mt-4">
                   <span className="text-4xl font-bold">{plan.price}</span>
@@ -91,7 +91,7 @@ const PricingSection = () => {
               </CardContent>
               
               <CardFooter>
-                <Button className={`w-full rounded-full ${plan.popular ? 'bg-topmate-600 hover:bg-topmate-700' : ''}`}>
+                <Button className={`w-full rounded-full ${plan.popular ? 'bg-topmate-600 hover:bg-topmate-700 btn-gradient' : ''}`}>
                   {plan.cta}
                 </Button>
               </CardFooter>

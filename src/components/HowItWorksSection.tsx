@@ -22,7 +22,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-20 md:py-32 relative">
+    <section id="how-it-works" className="py-24 md:py-32 relative bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">How KnockMe Works</h2>
@@ -34,7 +34,7 @@ const HowItWorksSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="animate-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
-              <Card className="border-0 rounded-3xl h-full hover:shadow-xl transition-all duration-300 overflow-hidden bg-white">
+              <Card className="border-0 rounded-3xl h-full shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden bg-white card-hover">
                 <CardContent className="p-8 flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full bg-topmate-50 flex items-center justify-center mb-6 relative">
                     <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-topmate-600 text-white flex items-center justify-center font-bold text-lg">

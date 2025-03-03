@@ -4,7 +4,7 @@ import { Users, Award, MapPin } from 'lucide-react';
 
 const ProblemSolutionSection = () => {
   return (
-    <section className="py-20 md:py-32 relative bg-gradient-to-b from-white to-topmate-50/30">
+    <section className="py-24 md:py-32 relative bg-gradient-to-b from-white to-topmate-50/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Problem Statement */}
@@ -17,7 +17,7 @@ const ProblemSolutionSection = () => {
             </p>
             
             <div className="grid grid-cols-1 gap-6 mt-8">
-              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover">
                 <CardContent className="p-6 flex items-start space-x-6">
                   <div className="h-14 w-14 rounded-2xl bg-topmate-100 flex items-center justify-center shrink-0">
                     <MapPin className="h-7 w-7 text-topmate-600" />
@@ -29,7 +29,7 @@ const ProblemSolutionSection = () => {
                 </CardContent>
               </Card>
               
-              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover">
                 <CardContent className="p-6 flex items-start space-x-6">
                   <div className="h-14 w-14 rounded-2xl bg-topmate-100 flex items-center justify-center shrink-0">
                     <Users className="h-7 w-7 text-topmate-600" />
@@ -53,7 +53,7 @@ const ProblemSolutionSection = () => {
             </p>
             
             <div className="mt-8">
-              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-white to-topmate-50">
+              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-white to-topmate-50 card-hover">
                 <CardContent className="p-6 flex items-start space-x-6">
                   <div className="h-14 w-14 rounded-2xl bg-topmate-100 flex items-center justify-center shrink-0">
                     <Award className="h-7 w-7 text-topmate-600" />

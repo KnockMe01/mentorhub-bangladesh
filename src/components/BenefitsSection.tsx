@@ -37,7 +37,7 @@ const benefitGroups = [
 
 const BenefitsSection = () => {
   return (
-    <section id="benefits" className="py-20 md:py-32 bg-white">
+    <section id="benefits" className="py-24 md:py-32 bg-gradient-to-b from-topmate-50/30 to-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Who Can Benefit</h2>
@@ -48,9 +48,9 @@ const BenefitsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefitGroups.map((group, index) => (
-            <Card key={index} className="border-0 rounded-3xl overflow-hidden h-full hover:shadow-xl transition-all duration-300 animate-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card key={index} className="border-0 rounded-3xl overflow-hidden h-full shadow-md hover:shadow-xl transition-all duration-300 animate-on-scroll card-hover" style={{ animationDelay: `${index * 0.2}s` }}>
               <CardContent className="p-8">
-                <div className="mb-6">
+                <div className="h-16 w-16 rounded-2xl bg-topmate-50 flex items-center justify-center mb-6">
                   {group.icon}
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{group.title}</h3>

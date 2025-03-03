@@ -4,10 +4,9 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <section className="relative pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden hero-gradient">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-x-0 top-0 h-[400px] bg-gradient-to-b from-topmate-50/50 to-transparent"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-topmate-100/50 blur-[80px]"></div>
         <div className="absolute top-1/4 left-0 w-[300px] h-[300px] rounded-full bg-topmate-200/30 blur-[60px]"></div>
       </div>
@@ -20,13 +19,13 @@ const HeroSection = () => {
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
               Get the Right 
-              <span className="text-gradient bg-gradient-to-r from-topmate-600 to-topmate-500 bg-clip-text text-transparent block"> Guidance</span>
+              <span className="text-gradient bg-gradient-to-r from-topmate-600 to-topmate-500 bg-clip-text text-transparent block">Guidance</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-xl">
               KnockMe connects Bangladeshi job seekers and professionals with industry experts for personalized mentorship, career guidance, and skill development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-topmate-600 hover:bg-topmate-700 text-white rounded-full">
+              <Button size="lg" className="bg-topmate-600 hover:bg-topmate-700 text-white rounded-full shadow-lg">
                 Find a Mentor
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
