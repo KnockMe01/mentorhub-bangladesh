@@ -4,22 +4,22 @@ import { Users, Award, MapPin } from 'lucide-react';
 
 const ProblemSolutionSection = () => {
   return (
-    <section className="py-24 md:py-32 relative bg-gradient-to-b from-white to-topmate-50/30">
+    <section className="py-24 md:py-32 relative bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Problem Statement */}
           <div className="animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">The Mentorship Gap in Bangladesh</h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 figma-heading">The Mentorship Gap in Bangladesh</h2>
+            <p className="text-xl text-muted-foreground mb-8 figma-subheading">
               Many talented professionals in Bangladesh, especially those outside Dhaka, 
               struggle to access quality mentorship and guidance for their careers. This 
               creates an uneven playing field and limits opportunities.
             </p>
             
             <div className="grid grid-cols-1 gap-6 mt-8">
-              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover">
+              <Card className="figma-card overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                 <CardContent className="p-6 flex items-start space-x-6">
-                  <div className="h-14 w-14 rounded-2xl bg-topmate-100 flex items-center justify-center shrink-0">
+                  <div className="feature-icon-container shrink-0">
                     <MapPin className="h-7 w-7 text-topmate-600" />
                   </div>
                   <div>
@@ -29,9 +29,9 @@ const ProblemSolutionSection = () => {
                 </CardContent>
               </Card>
               
-              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 card-hover">
+              <Card className="figma-card overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
                 <CardContent className="p-6 flex items-start space-x-6">
-                  <div className="h-14 w-14 rounded-2xl bg-topmate-100 flex items-center justify-center shrink-0">
+                  <div className="feature-icon-container shrink-0">
                     <Users className="h-7 w-7 text-topmate-600" />
                   </div>
                   <div>
@@ -45,17 +45,17 @@ const ProblemSolutionSection = () => {
           
           {/* Solution */}
           <div className="animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Solution</h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 figma-heading">Our Solution</h2>
+            <p className="text-xl text-muted-foreground mb-8 figma-subheading">
               KnockMe breaks down these barriers by providing structured, accessible mentorship
               to professionals across Bangladesh, connecting them with industry leaders for
               personalized guidance.
             </p>
             
             <div className="mt-8">
-              <Card className="border-0 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-white to-topmate-50 card-hover">
+              <Card className="figma-card overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-white to-topmate-50">
                 <CardContent className="p-6 flex items-start space-x-6">
-                  <div className="h-14 w-14 rounded-2xl bg-topmate-100 flex items-center justify-center shrink-0">
+                  <div className="feature-icon-container shrink-0">
                     <Award className="h-7 w-7 text-topmate-600" />
                   </div>
                   <div>

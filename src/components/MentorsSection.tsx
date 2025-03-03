@@ -49,15 +49,15 @@ const MentorsSection = () => {
     <section id="mentors" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Featured Mentors</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 figma-heading">Featured Mentors</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto figma-subheading">
             Meet some of our experienced mentors ready to guide you on your professional journey
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {mentors.map((mentor, index) => (
-            <Card key={index} className="border-0 rounded-3xl overflow-hidden group card-hover transition-all duration-300 animate-on-scroll shadow-md hover:shadow-xl" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="figma-card transition-all duration-300 animate-on-scroll shadow-md hover:shadow-xl" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
                   <Avatar className="w-24 h-24 border-4 border-white shadow-lg mb-4">
@@ -73,7 +73,7 @@ const MentorsSection = () => {
                   
                   <div className="flex flex-wrap gap-2 justify-center mb-4">
                     {mentor.expertise.map((skill, i) => (
-                      <Badge key={i} variant="secondary" className="bg-topmate-50 text-topmate-700 hover:bg-topmate-100">
+                      <Badge key={i} variant="secondary" className="bg-topmate-50 text-topmate-700 hover:bg-topmate-100 rounded-md">
                         {skill}
                       </Badge>
                     ))}
@@ -83,7 +83,7 @@ const MentorsSection = () => {
                     {mentor.bio}
                   </p>
                   
-                  <Button variant="outline" size="sm" className="w-full rounded-full">View Profile</Button>
+                  <Button variant="outline" size="sm" className="w-full rounded-xl figma-btn">View Profile</Button>
                 </div>
               </CardContent>
             </Card>
@@ -91,7 +91,7 @@ const MentorsSection = () => {
         </div>
         
         <div className="flex justify-center mt-12">
-          <Button variant="outline" className="group rounded-full">
+          <Button variant="outline" className="group rounded-xl figma-btn">
             Explore All Mentors
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>

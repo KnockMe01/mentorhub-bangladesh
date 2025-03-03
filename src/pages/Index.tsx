@@ -38,7 +38,7 @@ const Index = () => {
   console.log("Rendering Index page");
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#fafafa]">
       {/* Loading animation overlay */}
       <div className="fixed inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-700" 
            style={{ animation: 'fadeOut 0.7s ease-in-out forwards 0.5s' }}>
