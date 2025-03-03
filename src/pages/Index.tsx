@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
+import Banner from '@/components/Banner';
 import HeroSection from '@/components/HeroSection';
 import ProblemSolutionSection from '@/components/ProblemSolutionSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
@@ -42,12 +43,13 @@ const Index = () => {
       <div className="fixed inset-0 z-[100] flex items-center justify-center bg-white transition-opacity duration-700" 
            style={{ animation: 'fadeOut 0.7s ease-in-out forwards 0.5s' }}>
         <div className="flex flex-col items-center">
-          <GraduationCap className="h-16 w-16 text-mentor-600 animate-pulse" />
+          <GraduationCap className="h-16 w-16 text-topmate-600 animate-pulse" />
           <h1 className="mt-4 text-2xl font-bold">KnockMe</h1>
         </div>
       </div>
       
       <main className="min-h-screen">
+        <Banner />
         <Navbar />
         <HeroSection />
         <ProblemSolutionSection />

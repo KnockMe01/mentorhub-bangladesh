@@ -4,7 +4,7 @@ import { BookOpen, ArrowRight, RefreshCw, GraduationCap } from 'lucide-react';
 
 const benefitGroups = [
   {
-    icon: <BookOpen className="h-10 w-10 text-mentor-600" />,
+    icon: <BookOpen className="h-10 w-10 text-topmate-600" />,
     title: "For Job Seekers",
     benefits: [
       "Personalized CV review and optimization",
@@ -14,7 +14,7 @@ const benefitGroups = [
     ]
   },
   {
-    icon: <RefreshCw className="h-10 w-10 text-mentor-600" />,
+    icon: <RefreshCw className="h-10 w-10 text-topmate-600" />,
     title: "For Career Switchers",
     benefits: [
       "Guidance on transitioning to tech-driven roles",
@@ -24,7 +24,7 @@ const benefitGroups = [
     ]
   },
   {
-    icon: <GraduationCap className="h-10 w-10 text-mentor-600" />,
+    icon: <GraduationCap className="h-10 w-10 text-topmate-600" />,
     title: "For Upskillers",
     benefits: [
       "Customized learning paths from experts",
@@ -57,12 +57,12 @@ const BenefitsSection = () => {
                 <ul className="space-y-3 mb-6">
                   {group.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-mentor-600 mr-2 mt-1">•</span>
+                      <span className="text-topmate-600 mr-2 mt-1">•</span>
                       <span>{benefit}</span>
                     </li>
                   ))}
                 </ul>
-                <a href="#" className="inline-flex items-center text-mentor-600 font-medium hover:text-mentor-700 transition-colors">
+                <a href="#" className="inline-flex items-center text-topmate-600 font-medium hover:text-topmate-700 transition-colors">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
